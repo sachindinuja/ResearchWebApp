@@ -1,0 +1,189 @@
+/* Custom CSS for Tea Research Website */
+
+/* Fixed navbar styles */
+.navbar-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+
+/* Team member card styling */
+.single-team {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background: white;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.single-team:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.team-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    background: #f8f9fa;
+}
+
+.team-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.single-team:hover .team-image img {
+    transform: scale(1.05);
+}
+
+.team-content {
+    padding: 20px 15px 10px;
+    text-align: center;
+}
+
+.holder-name {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #333;
+}
+
+.holder-name a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.holder-name a:hover {
+    color: #754FFE;
+}
+
+.team-content p.text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.team-content2 {
+    padding: 0 15px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.sch-img {
+    padding: 8px 15px;
+    border: none;
+    background: #754FFE;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sch-img:hover {
+    background: #6344d0;
+    transform: translateY(-2px);
+}
+
+.social {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.single-team:hover .social {
+    opacity: 1;
+}
+
+.social ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.social ul li {
+    margin: 0 5px;
+}
+
+.social ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    color: #754FFE;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.social ul li a:hover {
+    background: #754FFE;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Smooth scrolling for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Adjust section spacing */
+section {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+/* Research Objectives cards styling */
+.objective-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 5px 30px 0px rgba(167, 167, 167, 0.16);
+    transition: all 0.3s ease-out 0s;
+    padding: 30px;
+    border: 2px solid transparent;
+}
+
+.objective-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 30px 0px rgba(167, 167, 167, 0.3);
+}
+
+.objective-card .services-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.objective-card .services-title a {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #2E2E2E;
+    display: block;
+    word-wrap: break-word;
+}
