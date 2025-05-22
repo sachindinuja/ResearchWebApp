@@ -2,14 +2,29 @@
 
 /* Fixed navbar styles */
 .navbar-area {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
-    z-index: 99;
+    z-index: 9999;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-out;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+}
+
+/* Additional styles for sticky navbar */
+.sticky {
+    position: fixed !important;
+    z-index: 9999 !important;
+    background-color: white !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 
 /* Team member card styling */
@@ -21,6 +36,9 @@
     background: white;
     margin-bottom: 30px;
     position: relative;
+    height: 380px; /* Increased height for all team cards */
+    display: flex;
+    flex-direction: column;
 }
 
 .single-team:hover {
@@ -33,12 +51,17 @@
     overflow: hidden;
     border-radius: 10px 10px 0 0;
     background: #f8f9fa;
+    height: 200px; /* Increased height for team images */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .team-image img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    max-height: 100%;
+    object-fit: contain;
     transition: transform 0.5s ease;
 }
 
@@ -47,8 +70,9 @@
 }
 
 .team-content {
-    padding: 20px 15px 10px;
+    padding: 15px 15px 5px;
     text-align: center;
+    flex-grow: 1;
 }
 
 .holder-name {
@@ -74,7 +98,7 @@
 }
 
 .team-content2 {
-    padding: 0 15px 20px;
+    padding: 0 15px 15px;
     display: flex;
     justify-content: center;
     gap: 15px;

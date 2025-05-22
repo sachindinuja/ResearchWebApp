@@ -11,13 +11,14 @@ $(function () {
 
   $(window).on("scroll", function (event) {
     var scroll = $(window).scrollTop();
-    if (scroll < 20) {
-      $(".navbar-area").removeClass("sticky");
-      $(".navbar .navbar-brand img").attr("src", "assets/images/.png");
-    } else {
-      $(".navbar-area").addClass("sticky");
-      $(".navbar .navbar-brand img").attr("src", "assets/images/.png");
-    }
+    // Always keep the navbar sticky regardless of scroll position
+    $(".navbar-area").addClass("sticky");
+    $(".navbar .navbar-brand img").attr("src", "assets/images/.png");
+  });
+  
+  // Ensure navbar is sticky on page load
+  $(document).ready(function() {
+    $(".navbar-area").addClass("sticky");
   });
 
   //===== Section Menu Active
