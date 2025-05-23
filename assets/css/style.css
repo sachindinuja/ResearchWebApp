@@ -1418,21 +1418,13 @@ p {
        11.FOOTER  css 
 ===========================*/
 .footer-area {
-  background-position: top center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/tea-plantation-south-korea-bright-green-bushes-are-green-tea (1).jpg') no-repeat center center/cover;
   position: relative;
-  z-index: 5; }
+  z-index: 5;
+  color: #fff; }
 
 .footer-area::before {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-image: url(../images/footer-bg.svg);
-  background-position: top center;
-  z-index: -1;
-  background-size: cover; }
+  display: none; }
   @media only screen and (min-width: 1921px) {
     .footer-area::before {
       height: 1120px; } }
@@ -1537,9 +1529,9 @@ p {
   height: 40px;
   line-height: 40px;
   border-radius: 5px;
-  background: -webkit-linear-gradient(left, #361cc1 0%, #2e82ef 100%);
+  background: -webkit-linear-gradient(left, #64f20b 0%, #30a921 100%);
   background: -o-linear-gradient(left, #361cc1 0%, #2e82ef 100%);
-  background: linear-gradient(to right, #361cc1 0%, #2e82ef 100%);
+  background: linear-gradient(to right, #49c11c#361cc1 0%, #289e0e 100%);
   text-align: center;
   z-index: 99;
   -webkit-transition: all 0.3s ease-out 0s;
